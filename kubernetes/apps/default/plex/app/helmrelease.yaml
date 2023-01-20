@@ -66,7 +66,7 @@ spec:
               - "plex.${SECRET_DOMAIN}"
             secretName: "plex-media-tls"
     volumeClaimTemplates:
-      - name: plex-config
+      - name: config
         mountPath: /config
         accessMode: ReadWriteOnce
         size: 100Gi
