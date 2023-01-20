@@ -36,11 +36,11 @@ spec:
     service:
       main:
         type: LoadBalancer
-        loadBalancerIP: ${SVC_PLEX_ADDR}
         externalTrafficPolicy: Local
+        loadBalancerIP: '${SVC_PLEX_ADDR}'
         ports:
           http:
-            port: 32400
+            port: &port 32400
     ingress:
       main:
         enabled: true
