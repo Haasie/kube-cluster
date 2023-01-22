@@ -9,3 +9,4 @@ resources:
   - ./bazarr/ks.yaml
   - ./whoogle/ks.yaml
   - ./lidarr/ks.yaml
+  - ./readarr/ks.yaml
