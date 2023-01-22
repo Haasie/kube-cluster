@@ -54,7 +54,7 @@ spec:
           external-dns.home.arpa/enabled: "true"
           cert-manager.io/cluster-issuer: "letsencrypt-production"
           hajimari.io/enable: "true"
-          hajimari.io/icon: "magnifier"
+          hajimari.io/icon: "search"
         hosts:
           - host: &host "whoogle.${SECRET_DOMAIN}"
             paths:
