@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: lidarr
+  name: readarr
   namespace: default
 spec:
   interval: 15m
@@ -26,17 +26,14 @@ spec:
   uninstall:
     keepHistory: false
   values:
-    controller:
-      type: statefulset
     image:
-      repository: ghcr.io/onedr0p/lidarr
-      tag: 1.0.2.2592@sha256:f4f26e15fd258dac0267d441f715a41a5404535f5ac16a246753a60e6f3246bc
-      pullPolicy: IfNotPresent
+      repository: ghcr.io/onedr0p/readarr-nightly
+      tag: 0.1.1.1526@sha256:f2ff32ef09828925cfb16073e70970da4e6abdfd3b98d548e2505c97c7abbebb
     env:
       TZ: "${TIMEZONE}"
-      LIDARR__INSTANCE_NAME: lidarr
-      LIDARR__PORT: &port 8686
-      LIDARR__LOG_LEVEL: info
+      READARR__INSTANCE_NAME: Readarr
+      READARR__PORT: &port 80
+      READARR__LOG_LEVEL: info
     service:
       main:
         ports:
@@ -49,7 +46,8 @@ spec:
         annotations:
           nginx.ingress.kubernetes.io/whitelist-source-range: |
             10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
-          hajimari.io/enable: "false"
+          hajimari.io/enable: "true"
+          hajimari.io/icon: "book-open-page-variant"
         hosts:
           - host: &host "{{ .Release.Name }}.${SECRET_DOMAIN}"
             paths:
