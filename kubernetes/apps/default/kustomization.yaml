@@ -7,3 +7,4 @@ resources:
   - ./hajimari/ks.yaml
   - ./plex/ks.yaml
   - ./bazarr/ks.yaml
+  - ./whoogle/ks.yaml
