@@ -35,7 +35,7 @@ spec:
     env:
       TZ: "${TIMEZONE}"
       LIDARR__INSTANCE_NAME: lidarr
-      LIDARR__PORT: &port 8686
+      LIDARR__PORT: &port 6767
       LIDARR__LOG_LEVEL: info
     service:
       main:
