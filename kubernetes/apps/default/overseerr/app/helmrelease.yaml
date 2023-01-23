@@ -65,7 +65,7 @@ spec:
       supplementalGroups:
         - 100
     volumeClaimTemplates:
-      - name: config
+      - name: config-overseerr
         mountPath: /config
         accessMode: ReadWriteOnce
         size: 1Gi
