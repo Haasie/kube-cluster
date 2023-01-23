@@ -57,15 +57,8 @@ spec:
         tls:
           - hosts:
               - *host
-    podSecurityContext:
-      runAsUser: 568
-      runAsGroup: 568
-      fsGroup: 568
-      fsGroupChangePolicy: "OnRootMismatch"
-      supplementalGroups:
-        - 100
     volumeClaimTemplates:
-      - name: config-overseerr
+      - name: config
         mountPath: /config
         accessMode: ReadWriteOnce
         size: 1Gi
