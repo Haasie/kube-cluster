@@ -30,7 +30,7 @@ spec:
       type: statefulset
     image:
       repository: ghcr.io/onedr0p/radarr
-      tag: 1.0.2.2592@sha256:f4f26e15fd258dac0267d441f715a41a5404535f5ac16a246753a60e6f3246bc
+      tag: 4.3.2.6857@sha256:f7157a0af6d7ce456491d47603e229d66f07b25593913cf641e0b6d2103e1969
       pullPolicy: IfNotPresent
     env:
       TZ: "${TIMEZONE}"
