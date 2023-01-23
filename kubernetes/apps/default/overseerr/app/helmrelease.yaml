@@ -59,7 +59,7 @@ spec:
               - *host
     volumeClaimTemplates:
       - name: config
-        mountPath: /config
+        mountPath: /app/config
         accessMode: ReadWriteOnce
         size: 1Gi
         storageClass: local-path
