@@ -12,7 +12,7 @@ spec:
   externalName: "192.168.1.5"
   ports:
     - name: https
-      port: &port 9090
+      port: &port 8006
       protocol: TCP
       targetPort: *port
 ---
@@ -42,7 +42,7 @@ spec:
               service:
                 name: *app
                 port:
-                  number: 9090
+                  number: 8006
   tls:
     - hosts:
         - *host
