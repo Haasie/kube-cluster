@@ -8,3 +8,4 @@ resources:
   - ./k8s-1.yaml
   - ./k8s-2.yaml
   - ./truenas.yaml
+  - ./proxmox.yaml
