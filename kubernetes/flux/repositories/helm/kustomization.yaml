@@ -16,3 +16,4 @@ resources:
   - ./weave-gitops.yaml
   - ./node-feature-discovery.yaml
   - ./intel.yaml
+  - ./longhorn.yaml
