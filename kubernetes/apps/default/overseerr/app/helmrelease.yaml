@@ -50,7 +50,7 @@ spec:
           hajimari.io/enable: "true"
           hajimari.io/icon: "movie-filter"
         hosts:
-          - host: &host "{{ .Release.Name }}.${SECRET_DOMAIN}"
+          - host: &host "requests.${SECRET_DOMAIN}"
             paths:
               - path: /
                 pathType: Prefix
