@@ -40,6 +40,10 @@ spec:
       namespaceSelector:
         matchNames:
           - default
+          - flux-system
+          - monitoring
+          - networking
+          - longhorn-system
     ingress:
       main:
         enabled: true

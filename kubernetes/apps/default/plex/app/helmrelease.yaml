@@ -71,7 +71,7 @@ spec:
         mountPath: /config
         accessMode: ReadWriteOnce
         size: 100Gi
-        storageClass: local-path
+        storageClass: longhorn
         labels:
           snapshot.home.arpa/enabled: "true"
     persistence:
