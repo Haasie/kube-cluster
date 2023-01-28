@@ -26,6 +26,7 @@ spec:
       kubeletRootDir: /var/lib/kubelet
     persistence:
       defaultClass: true
+      defaultDataPath: /mnt/longhorn
       defaultClassReplicaCount: 3
       defaultFsType: ext4
       reclaimPolicy: Delete
