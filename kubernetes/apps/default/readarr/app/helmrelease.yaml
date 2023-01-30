@@ -26,6 +26,7 @@ spec:
   uninstall:
     keepHistory: false
   values:
+
     image:
       repository: ghcr.io/onedr0p/readarr-nightly
       tag: 0.1.2.1544@sha256:a8e38d1cf51bb7cba7483630cfeb0a97ecce91b970249575073fcdde97638ee4
@@ -57,12 +58,10 @@ spec:
           - hosts:
               - *host
     podSecurityContext:
-      runAsUser: 568
-      runAsGroup: 568
-      fsGroup: 568
+      runAsUser: 1000
+      runAsGroup: 1000
+      fsGroup: 1000
       fsGroupChangePolicy: "OnRootMismatch"
-      supplementalGroups:
-        - 100
     volumeClaimTemplates:
       - name: config
         mountPath: /config
