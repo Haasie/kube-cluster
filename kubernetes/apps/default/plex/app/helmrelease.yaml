@@ -70,7 +70,7 @@ spec:
       - name: config-plex
         mountPath: /config
         accessMode: ReadWriteOnce
-        size: 100Gi
+        size: 150Gi
         storageClass: longhorn
         labels:
           snapshot.home.arpa/enabled: "true"
