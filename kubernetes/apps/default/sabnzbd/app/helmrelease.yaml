@@ -77,6 +77,8 @@ spec:
         accessMode: ReadWriteOnce
         size: 1Gi
         storageClass: longhorn
+    nodeSelector:
+      gputype: "lesspower"
     persistence:
       media:
         enabled: true
