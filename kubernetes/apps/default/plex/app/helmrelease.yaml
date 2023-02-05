@@ -87,6 +87,7 @@ spec:
         type: emptyDir
     nodeSelector:
       intel.feature.node.kubernetes.io/gpu: "true"
+      gputype: "power"
     affinity:
       podAntiAffinity:
         requiredDuringSchedulingIgnoredDuringExecution:
