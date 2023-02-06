@@ -90,9 +90,9 @@ spec:
       incomplete:
         enabled: true
         type: emptyDir
-    resources:
-      requests:
-        memory: 250Mi
-        cpu: 500m
-      limits:
-        memory: 7500Mi
+#    resources:
+#      requests:
+#        memory: 250Mi
+#        cpu: 500m
+#      limits:
+#        memory: 7500Mi
