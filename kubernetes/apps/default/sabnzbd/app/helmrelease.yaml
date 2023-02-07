@@ -87,13 +87,6 @@ spec:
         path: /mnt/pool-01/media/
         mountPath: /media/
         readOnly: false
-      incomplete:
-        enabled: true
-        type: nfs
-        server: "192.168.1.4"
-        path: /mnt/pool-01/media/downloads/sabnzbd/incomplete
-        mountPath: /media/incomplete
-        readOnly: false
 #    resources:
 #      requests:
 #        memory: 250Mi
