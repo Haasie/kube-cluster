@@ -9,7 +9,8 @@
     },
     "yaml.schemas": {
         "ansible": "ansible/*.yml",
-        "Kubernetes": "kubernetes/*.yaml"
+        "Kubernetes": "kubernetes/*.yaml",
+        "https://json.schemastore.org/yamllint.json": "file:///Users/joerihaas/GitHub/kube-cluster/kubernetes/apps/default/cloudnative-pg/cluster/cluster.yaml"
     },
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,

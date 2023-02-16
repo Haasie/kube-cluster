@@ -15,3 +15,4 @@ resources:
   - ./sabnzbd/ks.yaml
   - ./tautulli/ks.yaml
   - ./overseerr/ks.yaml
+  - ./cloudnative-pg/ks.yaml
