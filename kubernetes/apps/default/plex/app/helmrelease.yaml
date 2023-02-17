@@ -82,9 +82,6 @@ spec:
         path: /mnt/pool-01/media
         mountPath: /media
         readOnly: false
-      transcode:
-        enabled: true
-        type: emptyDir
     nodeSelector:
       intel.feature.node.kubernetes.io/gpu: "true"
       gputype: "power"
