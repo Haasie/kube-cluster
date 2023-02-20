@@ -78,7 +78,7 @@ spec:
       media:
         enabled: true
         type: nfs
-        server: "192.168.1.4"
+        server: "192.168.1.5"
         path: /mnt/pool-01/media
         mountPath: /media
         readOnly: false
