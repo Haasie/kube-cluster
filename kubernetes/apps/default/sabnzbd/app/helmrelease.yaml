@@ -78,7 +78,7 @@ spec:
         size: 1Gi
         storageClass: longhorn
     nodeSelector:
-      gputype: "nopower"
+      gputype: "lesspower"
     persistence:
       media:
         enabled: true
