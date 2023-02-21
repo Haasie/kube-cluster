@@ -87,9 +87,9 @@ spec:
         path: /pool-01/media/
         mountPath: /media/
         readOnly: false
-#    resources:
-#      requests:
-#        memory: 250Mi
-#        cpu: 500m
+    resources:
+      requests:
+        memory: 250Mi
+        cpu: 500m
 #      limits:
 #        memory: 7500Mi
