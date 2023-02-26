@@ -31,6 +31,7 @@ spec:
     image:
       repository: ghcr.io/onedr0p/readarr-nightly
       tag: 0.1.4.1596@sha256:14febbc1c263eb24c39ab180c29bb6edfc91998347f76078bf58f9b58efd337b
+      pullPolicy: IfNotPresent
     env:
       TZ: "${TIMEZONE}"
       READARR__INSTANCE_NAME: Readarr
@@ -49,7 +50,7 @@ spec:
           nginx.ingress.kubernetes.io/whitelist-source-range: |
             10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
           hajimari.io/enable: "true"
-          hajimari.io/icon: "book-open-page-variant"
+          hajimari.io/icon: "mdi:book-heart"
         hosts:
           - host: &host "{{ .Release.Name }}.${SECRET_DOMAIN}"
             paths:
