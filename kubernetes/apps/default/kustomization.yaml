@@ -16,3 +16,4 @@ resources:
   - ./tautulli/ks.yaml
   - ./overseerr/ks.yaml
   - ./cloudnative-pg/ks.yaml
+  - ./calibre/ks.yaml
