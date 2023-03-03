@@ -27,8 +27,8 @@ spec:
     keepHistory: false
   values:
     image:
-      repository: ghcr.io/linuxserver/calibre
-      tag: version-v6.13.0
+      repository: lscr.io/linuxserver/calibre
+      tag: 6.13.0
     env:
       TZ: ${TZ}
       PUID: "568"
